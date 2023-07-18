@@ -1,0 +1,844 @@
+* {
+	box-sizing: border-box;
+}
+
+/* body */
+body {
+	font-family: 'Alata', Cambria, 'Hoefler Text', 'Liberation Serif', Times,
+		'Times New Roman', 'serif';
+	line-height: 1.6;
+	background-color: rgba(31, 31, 31, 0.98);
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	margin-top: 0;
+}
+
+/* header */
+.wrapper {
+	max-width: 1280px;
+	margin: auto;
+	background-color: black;
+}
+
+.header {
+	height: 350px;
+	background-image: url('marvel-intro.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* positions */
+.center {
+	margin: auto;
+	text-align: center;
+}
+
+.middle {
+	vertical-align: middle;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}
+
+.clear-fix {
+	overflow: auto;
+}
+
+/* custom scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* links */
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+/* top navigation bar */
+.menu-container {
+	width: 100%;
+	min-height: 70px;
+	background-color: black;
+}
+
+.top-nav {
+	width: auto;
+	padding: 0px 10px;
+	z-index: 1;
+}
+
+.top-nav a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+}
+
+.top-nav a:hover {
+	background-color: red;
+}
+
+.no-hover a:hover {
+	background: none !important;
+}
+
+/* dropdown menu */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	padding: 5px 0px;
+}
+
+.dropdown a {
+	color: white;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #2c2929;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	display: block;
+	color: white;
+	text-align: left;
+	padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.mob-nav-container {
+	width: 100%;
+	min-height: 70px;
+	z-index: 2;
+}
+
+.menu-icon {
+	width: 60px;
+}
+
+.home-icon {
+	display: none;
+	padding-top: 20px;
+}
+
+/* light and dark theme button */
+.theme {
+	display: inline;
+	color: white !important;
+	cursor: pointer;
+	z-index: 999;
+}
+
+/* mob nav */
+.icon {
+	display: none;
+	padding: 20px;
+}
+
+.icon i {
+	color: white;
+}
+
+.mob-nav {
+	display: none;
+	position: absolute;
+	width: 150px;
+	padding: 20px opx;
+	z-index: 1;
+	background-color: #1a1a1a;
+}
+
+.mob-nav a {
+	display: block;
+	padding: 10px;
+	width: 100%;
+	padding-right: 20px;
+
+	color: white;
+}
+
+.mob-nav a:hover {
+	background-color: red;
+}
+.mob-dropdown {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+
+.mob-dropdown-content {
+	display: none;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+	z-index: 1;
+	border-bottom: 1px solid white;
+}
+
+.mob-dropdown-content a {
+	display: block;
+	text-align: left;
+	color: white;
+	padding: 10px;
+	padding-left: 20px;
+}
+
+.mob-dropdown:hover .mob-dropdown-content {
+	display: block;
+}
+
+/* page divisions */
+.row {
+	position: relative;
+	width: 100%;
+	vertical-align: top;
+	background-color: #bfbfbf;
+	padding: 20px;
+}
+
+.leftcolumn {
+	float: left;
+	width: 75%;
+}
+
+.rightcolumn {
+	float: left;
+	width: 25%;
+	padding-left: 20px;
+}
+
+.inner-row {
+}
+
+.card {
+	width: 100%;
+	background-color: #aaaaaa;
+	color: black;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.col70 {
+	float: left;
+	width: 70%;
+}
+
+.col30 {
+	float: left;
+	width: 30%;
+}
+
+.col80 {
+	float: left;
+	width: 80%;
+}
+
+.col20 {
+	float: left;
+	width: 20%;
+}
+
+blockquote {
+	padding-left: 10px;
+	border-left: medium solid #870706;
+}
+
+.info-card {
+	width: 100%;
+	border: thin solid #32373c;
+	overflow: auto;
+}
+
+.info-title {
+	background-color: #808080; 
+	padding: 10px;
+}
+
+.info-content {
+	padding: 15px;
+	font-size: 13px;
+	border-top: thin solid #32373c;
+}
+
+.info-content .col70 {
+	padding-left: 30px;
+	color: #1668b4;
+	font-style: italic;
+}
+
+.info-content .col30, .info-content .col70 {
+	margin-bottom: 10px;
+}
+
+.braces {
+	color: black !important;
+}
+
+/*phase card*/
+.phase {
+	background-color: #bdbdbd;
+}
+
+
+.phasecnt b {
+	color: darkred !important;
+}
+
+.phaseimg { grid-area: content;}
+.phasecnt { grid-area: img; }
+
+.grid-container2 {
+  display: grid;
+  grid-template-areas:
+    'content content content content img img';
+	grid-template-rows: auto;
+	grid-template-columns: 145px auto;
+  gap: 10px;
+  padding: 10px;
+ }
+
+.grid-container2 > div {	
+	border: thin solid #2E2E2E;
+  	padding: 10px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-areas:
+    'img img content content content content';
+	grid-template-rows: auto;
+	grid-template-columns: 145px auto;
+  gap: 10px;
+  padding: 10px;
+ }
+
+.grid-container3 > div {	
+	border: thin solid #2E2E2E;
+  	padding: 10px;
+}
+
+
+/* review form*/
+.card input {
+	width: 100%;
+	padding: 5px;
+	font: inherit;
+}
+
+.card select, .card textarea {
+	font: inherit; 
+	padding: 5px;
+}
+
+/* star rating*/
+.rating {
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+}
+
+.rating > input{
+ display:none;
+}
+
+.rating > label {
+position: relative;
+width: 1.1em;
+font-size: 40px;
+color: lightgray;
+cursor: pointer;
+}
+
+.rating > label::before{
+content: "\2605";
+color: darkred;
+position: absolute;
+opacity: 0;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before{
+opacity:1;
+}
+
+.rating:hover > input:checked ~ label:before{ 
+opacity: 0.4;
+ }
+ 
+#reviewbtn {
+	font-family: inherit;
+	background-color: #870706;
+	border: none;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	margin: 5px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+/*pagination*/
+.pagination {
+  display: inline-block; 
+}
+
+.pagination a {
+  color: white;
+  background-color: #32373c;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  margin: 0 4px;
+}
+
+.pagination a:active {
+  background-color: #4B535B !important;
+  color: white;
+}
+
+.pagination a:hover:not(active) {background-color: #606a74;}
+
+/* review cards*/
+
+.review {
+	background-color: #bdbdbd;
+}
+
+.item1 { grid-area: header;}
+.item2 { grid-area: menu; }
+.item3 { grid-area: footer; 
+	word-break: break-all; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu header header header header header'
+    'menu footer footer footer footer footer';
+	grid-template-rows: 90px auto;
+	grid-template-columns: 185px auto;
+  gap: 10px;
+  padding: 10px;
+ }
+
+.grid-container > div {	
+	border: thin solid #2E2E2E;
+  	padding: 10px;
+}
+
+.time {
+	font-size: 12px;
+	color: lightslategray !important;
+}
+
+.star {
+	color: darkgoldenrod;
+	font-size: 30px;
+}
+
+.rating-val {
+	font-size: 15px;
+	color: lightslategray !important;
+}
+
+.category {
+	color: darkred;
+}
+
+.revimg {
+	text-align: center;
+	max-height: 250px;
+	padding-top: 10px;
+}
+
+/*filter tabs*/
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #32373c;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  font: inherit;
+  color: white;
+  background-color: #32373c;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #606a74;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #4B535B;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  margin-top: 20px;
+}
+
+
+h2 {	
+	padding-bottom: 5px;
+	margin-top: 1px !important;
+	margin-bottom: 30px;
+	border-bottom: 1px solid black;
+}
+
+.image {
+	text-align: center;
+	max-width: 100%;
+	padding: 20px;
+}
+
+/* text in home */
+.red {
+	color: #ba1a1b;
+	font-size: 20px;
+}
+
+.blue {
+	color: #1668b4;
+}
+
+/* clearing float */
+.clear-float:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* slideshow */
+.upcoming {
+	min-height: 350px;
+}
+
+.slideshow-container {
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+}
+
+.mySlides img {
+	width: 100%;
+}
+
+.active {
+	background-color: #717171;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+.posters {
+	min-height: 420px;
+}
+
+.posters img {
+	height: 365px;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* featured characters with overlay */
+
+.char-container {
+	position: relative;
+	width: 45%;
+	margin: 5px;
+}
+
+.char-img {
+	width: 100%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.more {
+	padding-top: 15px;
+	text-align: center;
+	width: 100%;
+}
+
+#morebtn {
+	font-family: inherit;
+	background-color: #870706;
+	border: none;
+	text-decoration: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.more a {
+	color: white !important;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	color: white;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+}
+
+.char-container:hover .overlay {
+	opacity: 1;
+}
+
+/* news card*/
+.news-card-container {
+	width: 33.3%;
+	padding: 10px;
+}
+
+.news-card {
+	background-color: #bdbdbd;
+	padding: 0px 0px 25px 0px;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.news-card img {
+	width: 100%;
+	
+	border-radius: 10px 10px 0px 0px;
+}
+
+/* modal */
+.modal-button {
+	font-family: inherit;
+	background-color: #bdbdbd;
+	border: none;
+	color: black;
+	text-decoration: none;
+}
+
+.modal-button:hover {
+	color: red;
+	cursor: pointer;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding: 100px 0px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+	background-color: #cfcfcf;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 60%;
+	color: black;
+}
+
+.genre {
+	color: red;
+	text-align: left;
+}
+
+.date {
+	color: gray;
+	text-align: left;
+}
+
+.deck {
+	font-size: 18px;
+	font-style: italic;
+}
+
+.by {
+	font-size: 15px;
+	text-align: left;
+}
+
+.modal-img {
+	min-height: 400px;
+	padding: 10px;
+}
+
+.article {
+	text-align: left;
+}
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover {
+	color: red;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.contact {
+	font-size: 20px;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+}
+
+.subscribe input[type=submit] {
+	font-family: inherit;
+	background-color: #870706;
+	border: none;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	margin-top: 30px !important;
+}
+
+.subscribe input[type=email], .subscribe input[type=text], .subscribe input[type=submit] {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+.subscribe input[type=checkbox] {
+	width: auto !important;
+}
+
+.subscribe span {
+	width: 100% !important;
+	padding: 10px;
+}
+
+.footer {
+	padding: 10px;
+	background: #870706;
+	color: white;
+}
+
+.top {
+	display: none;
+	width: 80px;
+	height: 40px;
+	border-radius: 2px;
+	padding: 10px;
+	background-color: white;
+	right: 10px;
+	bottom: 10px;
+	float: right;
+	position: sticky;
+	position: -webkit-sticky;
+	text-align: center;
+}
+
+/* responsive webpage */
+@media screen and (max-width: 1240px) {
+	.leftcolumn, .rightcolumn, .col30, .col70 {
+		width: 100%;
+		padding: 0;
+	}
+	.modal-content, .news-card-container {
+		width: 100%;
+	}
+	.grid-container {
+		grid-template-rows: max-content auto;
+	}
+}
+
+/* responsive nav bar */
+@media screen and (max-width: 780px) {
+	.top-nav {
+		display: none;
+	}
+	.icon {
+		display: block;
+	}
+	.home-icon {
+		display: block;
+	}
+}

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+
+<!--header start-->
+<head>
+<title>MCU wiki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/x-icon" href="favicon.png" />
+<link rel="stylesheet" type="text/css" href="style.css" id="stylesheet" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alata" />
+<script src="script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<!--header end-->
+
+<!--body start-->
+<body>
+<!--body wrapper start-->
+<div class="wrapper">
+<!--page header start-->
+<div class="header"></div>
+<!--page header end-->
+
+<!--menu container starts-->
+<div class="menu-container sticky">
+<!--top navigation start-->
+<div class="top-nav middle">
+<!--left starts-->
+<div class="left">
+<!--logo-->
+<div class="dropdown img middle no-hover">
+<a href="mcu-wiki.php"><img src="logo.png" alt="home-logo" height="35px"/></a>
+</div>
+
+<!--home-->
+<div class="dropdown middle">
+<a href="mcu-wiki.php">HOME</a>
+</div>
+
+<!--dropdown-->
+<div class="dropdown middle">
+<a href="javascript:void(0)">UNIVERSE <i class="fas fa-caret-down" style="font-size: 15px; color: white"></i></a>
+<div class="dropdown-content">
+<a href="organisations.html">Organisations</a>
+<a href="characters.html">Characters</a>
+<a href="timeline.html">Timeline</a>
+</div>
+</div>
+
+<!--dropdown-->
+<div class="dropdown middle">
+<a href="javascript:void(0)">MOVIES <i class="fas fa-caret-down" style="font-size: 15px; color: white"></i></a>
+<div class="dropdown-content">
+<a href="phase1.php">Phase 1</a>
+<a href="phase2.php">Phase 2</a>
+<a href="phase3.php">Phase 3</a>
+<a href="phase4.php">Phase 4</a>
+</div>
+</div>
+
+<!--dropdown-->
+<div class="dropdown middle">
+<a href="javascript:void(0)">TV SHOWS <i class="fas fa-caret-down" style="font-size: 15px; color: white" ></i></a>
+<div class="dropdown-content">
+<a href="marvelheroes.php">Marvel Heroes</a>
+<a href="disney.php">Disney+ series</a>
+</div>
+</div>
+
+<!--dropdown-->
+<div class="dropdown middle">
+<a href="review.php">REVIEWS</a>
+</div>
+</div>
+<!--left ends-->
+</div>
+<!--top navigation ends-->
+
+<!--right starts-->
+<div class="right" style="padding: 20px">
+<!--theme toggle button-->
+<div class="dropdown middle theme no-hover">
+<a onclick="change()"><i class="fas fa-adjust" id="themebtn" title="Lumos!"></i></a>
+</div>
+</div>
+<!--right ends-->
+
+<div>
+<!--menu button-->
+<div class="menu-icon middle no-hover left">
+<a class="icon" id="menubtn"><i class="fa fa-bars"></i></a>
+</div>
+
+<!--logo-->
+<div class="home-icon img middle no-hover center">
+<a href="mcu-wiki.php"><img src="logo.png" alt="home-logo" height="35px" /></a>
+</div>
+<br />
+</div>
+
+<!--mob nav starts-->
+<div class="mob-nav" id="menu">
+<!--home-->
+<div class="mob-dropdown middle">
+<a href="mcu-wiki.php">HOME</a>
+</div>
+<br />
+
+<!--dropdown-->
+<div class="mob-dropdown middle">
+<a href="javascript:void(0)">UNIVERSE<i class="fas fa-caret-down right" style="font-size: 15px; color: white"></i></a>
+<div class="mob-dropdown-content">
+<a href="organisations.html">Organisations</a>
+<a href="characters.html">Characters</a>
+<a href="timeline.html">Timeline</a>
+</div>
+</div>
+<br />
+
+<!--dropdown-->
+<div class="mob-dropdown middle">
+<a href="javascript:void(0)">MOVIES<i class="fas fa-caret-down right" style="font-size: 15px; color: white"></i></a>
+<div class="mob-dropdown-content">
+<a href="phase1.php">Phase 1</a>
+<a href="phase2.php">Phase 2</a>
+<a href="phase3.php">Phase 3</a>
+<a href="phase4.php">Phase 4</a>
+</div>
+</div>
+<br />
+
+<!--dropdown-->
+<div class="mob-dropdown middle">
+<a href="javascript:void(0)">TV SHOWS<i class="fas fa-caret-down right" style="font-size: 15px; color: white"></i></a>
+<div class="mob-dropdown-content">
+<a href="marvelheroes.phpl">Marvel Heroes</a>
+<a href="disney.php">Disney+ series</a>
+</div>
+</div>
+<br />
+
+<!--dropdown-->
+<div class="mob-dropdown middle">
+<a href="review.php">REVIEWS</a>
+</div>
+<br />
+</div>
+<!--mob nav ends-->
+</div>
+<!--menu container ends-->
+
+<!--row-wrapper starts-->
+<div class="row clear-float">
+<!--left column starts-->
+<div class="leftcolumn">
+<!--inner row starts-->
+<div class="inner-row">
+<!--card starts-->
+<div class="card clear-float">
+<h2>HYDRA</h2>
+<!--col70 starts-->	
+<div class="col70">
+<blockquote>
+<br>"Cut off one head, two more shall take its place. Hail HYDRA!"
+<br>
+<i>―Red Skull</i>
+</blockquote>
+<p>
+The <b class="blue">HYDRA</b> was an authoritarian paramilitary-subversive terrorist organization bent on world domination. It was founded in ancient times, formerly as a cult centered around the fanatical worship of Hive, a powerful Inhuman that was exiled to the planet Maveth by ancient Inhumans. Ever since his banishment, the cult had been determined
+ to bring him back to Earth to commence a planetary takeover.
+</p>
+<p>
+Over the centuries, the cult evolved, taking many forms, with its most recent incarnation coming into 
+existence shortly after the rise of Nazism in Germany under the leadership of Johann Schmidt as the scientific
+branch of the Nazi Schutzstaffel. During this time, the cult took on the name HYDRA, which soon became the organization's
+most colloquial label. During World War II, Schmidt separated HYDRA from Nazi Germany to start his own conquest of the world,
+and it was during or before this time when HYDRA seemingly abandoned the cult's original beliefs. Converting from occultism to draconian anti-freedom principles, HYDRA became an organization with a
+hell-bent nature that is dedicated to this newfound political doctrine.
+</p>
+<p>
+Loyal to its oath, HYDRA survived even that defeat. A single cell led by the US Air Force officer General 
+Hale continued its hunt for S.H.I.E.L.D. agents, and at the same time worked to save humanity from a threat from 
+space. Despite making a deal with the alien Confederacy, Hale hoped to transform her daughter to the strongest person 
+on Earth in order to force them to alter the deal. However, S.H.I.E.L.D., whose core members had seen what appeared to 
+be the catastrophic consequences of this project, intervened in her plans and even the prospect of ensuring the safety of
+humanity could not unite the two organizations as Hale had hoped. Hale would be killed
+by an insane Glenn Talbot, putting an end to her HYDRA faction.
+</p>
+<p>
+By the end the 20th century, operatives of HYDRA had managed to spread outside of S.H.I.E.L.D., infiltrating many important organizations, including the United States Government and the World Security Council, eventually establishing many secret bases around the world. One of HYDRA's top agents in S.H.I.E.L.D., John Garrett, secretly led the Centipede Project with the goal to recreate the Super Soldier. In 2014, HYDRA's plans for world domination almost succeeded through their agent Alexander Pierce and S.H.I.E.L.D.'s Project Insight. However, their plan to eliminate 20 million people who posed a threat to HYDRA failed because of the efforts of HYDRA's oldest enemy, Captain America, who publicly exposed their infiltration of S.H.I.E.L.D. and destroyed their main tool of destruction, three of S.H.I.E.L.D.'s Helicarriers, with Alexander Pierce being killed by S.H.I.E.L.D.'s former director Nick Fury in the process. However, HYDRA leader Baron Strucker already had new plans for global domination, plans which included twins declared "miracles" and the Scepter.
+</p>
+<p>
+However, even that defeat was only a temporary setback for HYDRA. S.H.I.E.L.D. was destroyed and publicly 
+declared a terrorist organization, and many HYDRA agents continued with their work, including the high ranking member 
+Daniel Whitehall who used the fall of S.H.I.E.L.D. to start the campaign to recover the Obelisk. However, the campaign 
+ended disastrously for HYDRA. Whitehall was killed before he could fully exploit the Obelisk, his second in command Sunil
+ Bakshi was captured, and many other heads of HYDRA were killed by HYDRA itself when S.H.I.E.L.D. fooled them into thinking 
+that there was a power struggle within HYDRA's ranks. Two of the remaining heads of HYDRA, Baron Strucker and Doctor List, 
+continued with their experiments on powered individuals. However, even their experiments came to an end when the Avengers 
+attacked Strucker's fortress in Sokovia, killing List and capturing Baron von Strucker, who was later killed by the robot 
+Ultron. Strucker's demise marked the end of HYDRA's militaristic and scientific faction, allowing for its more ancient 
+roots to take control.
+</p>
+<p>
+Other small HYDRA cells like Hale's would continue to operate, albeit being a mere 
+fraction of the original HYDRA's size and power. Bucky Barnes, an unwilling HYDRA assassin who
+ had been freed from his brainwashing, would assist the U.S. federal government in apprehending the 
+final members of the once powerful organization.
+</p>
+</div>
+<!--col70 ends-->
+<!--col30 starts-->
+<div class="col30" style="padding-left: 20px;">
+<!--info-card starts-->
+<div class="info-card">
+
+<!--info-title starts-->
+<div class="info-title">
+<h3 class="center">HYDRA</h3>
+</div>
+<!--info-title ends-->
+<img class="image" src="organisations/hydra.png" alt="shield" />
+<!--info-content starts-->
+<div class="info-content">
+
+<!--row1 starts-->
+<div class="row1 clear-float">
+
+
+	
+<div class="col30"><b>Founders</b></div>
+<div class="col70">
+
+Hive †<br>
+Johann Schmidt <br>
+
+</div>
+	
+<div class="col30"><b>Leader</b></div>
+<div class="col70">
+Johann Schmidt <br>
+Arnim Zola † <br>
+Wilfred Malick † <br>
+Alexander Pierce † <br>
+Wolfgang von Strucker † <br>
+Daniel Whitehall † <br>
+Octavian Bloom † <br>
+Banker † <br>
+Sheikh † <br>
+Baroness † <br>
+Grant Ward † <br>
+Gideon Malick † <br>
+Hive † <br>
+Hale † <br>
+</div>
+
+<div class="col30"><b>Headquaters</b></div>
+<div class="col70">
+
+HYDRA Headquarters <span class="braces">(formerly)</span><br>
+HYDRA Research Base <span class="braces">(formerly)</span><br>
+Schoonebeek Oil Field <span class="braces">(formerly)</span><br>
+HYDRA Preparatory Academy<span class="braces"> (formerly)</span><br>
+</div>
+	
+<div class="col30"><b>Locations</b></div>
+<div class="col70">
+Worldwide
+</div>
+
+<div class="col30"><b>Status</b></div>
+<div class="col70">
+Active
+</div>
+
+</div>
+<!-- row1 ends-->
+
+<div class="center" style="padding: 20px;"><b>Appearances</b></div>
+
+<div class="col30"><b>Movies</b></div>
+<div class="col70">
+Iron Man<br>
+Iron Man 2<br>
+Thor<br>
+Captain America: The First Avenger<br>
+The Avengers<br>
+Iron Man 3<span class="braces"> (mentioned)</span><br>
+Thor: The Dark World <span class="braces">(mentioned)</span><br>
+Avengers: Age of Ultron<br>
+Captain America: Civil War <span class="braces">(mentioned)</span><br>
+Spider-Man: Far From Home<br>
+Black Widow <span class="braces">(flashback)</span><br>
+</div>
+	
+<div class="col30"><b>TV Shows</b></div>
+<div class="col70">
+
+Agents of S.H.I.E.L.D.<br>
+Agent Carter<br>
+WandaVision <span class="braces">(flashback)</span><br>
+The Falcon and The Winter Soldier <span class="braces">(flashback)</span><br>
+Loki<br>
+</div>
+<br />
+</div>
+<!--info-content ends-->
+</div>
+<!--info-card ends-->
+</div>
+<!--col30 ends-->
+</div>
+<!--card ends-->
+	
+</div>
+<!--inner row ends-->
+</div>
+<!--left column ends-->
+
+<!--rightt column starts-->
+<div class="rightcolumn">
+<!--inner row starts-->
+<div class="inner-row">
+<!--card starts-->
+<div class="card upcoming">
+<h2>Upcoming</h2>
+
+<!--slideshow container starts-->
+<div class="slideshow-container" data-cycle="3000">
+<!--slide-->
+<div class="mySlides fade">
+<img src="upcoming/thorlat.jpg" alt="thor: love and thunder"/>
+</div>
+
+<!--slide-->
+<div class="mySlides fade">
+<img src="upcoming/wakanda4ever.jpg" alt="wakanda forever" />
+</div>
+
+<!--slide-->
+<div class="mySlides fade">
+<img src="upcoming/gog3.webp" alt="guardians of the galaxy vol.3"/>
+</div>
+
+<!--slide-->
+<div class="mySlides fade">
+<img src="upcoming/shehulk.jpg" alt="she hulk" />
+</div>
+
+<!--slide-->
+<div class="mySlides fade">
+<img src="upcoming/iamgroot.jpg" alt="i am groot" />
+</div>
+</div>
+<!--slideshow container ends-->
+</div>
+<!--card ends-->
+
+<!--card starts-->
+<div class="card">
+<h2>Countdown</h2>
+<p id="count" class="center"></p>
+<img src="thorlat.png" alt="thorlat" class="image" />
+</div>
+<!--card ends-->
+
+<!--card starts-->
+<div class="card char clear-float">
+<h2>Featured Characters</h2>
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="loki.html">
+<img src="characters/loki.webp" alt="loki" class="char-img" />
+<div class="overlay">Loki</div>
+</a>
+</div>
+<!--character container ends-->
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="ironman.html">
+<img src="characters/iron-man.webp" alt="iron-man" class="char-img" />
+<div class="overlay">Iron Man</div>
+</a>
+</div>
+<!--character container ends-->
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="thanos.html">
+<img src="characters/thanos.webp" alt="thanos" class="char-img" />
+<div class="overlay">Thanos</div>
+</a>
+</div>
+<!--character container ends-->
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="moonknight.html">
+<img src="characters/moon-knight.webp" alt="moon-knight" class="char-img"/>
+<div class="overlay">Moon Knight</div>
+</a>
+</div>
+<!--character container ends-->
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="scarletwitch.html">
+<img src="characters/scarlet-witch.webp" alt="scarlet-witch" class="char-img" />
+<div class="overlay">Scarlet Witch</div>
+</a>
+</div>
+<!--character container ends-->
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="msmarvel.html">
+<img src="characters/ms-marvel.webp" alt="ms-marvel" class="char-img" />
+<div class="overlay">Ms Marvel</div>
+</a>
+</div>
+<!--character container ends-->
+
+<div class="more left"><button id="morebtn"><a href="characters.html">More...</a></button></div>
+</div>
+<!--card ends-->
+
+<!--card starts-->
+<div class="card">
+<h2>Contact Us</h2>
+
+<!--contact starts-->
+<div class="contact">
+<a href="https://www.instagram.com/marvel/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a><br />
+<a href="https://www.facebook.com/groups/MCU.Official" target="_blank"><i class="fa fa-facebook"></i> Facebook</a><br />
+<a href="https://twitter.com/MarvelStudios" target="_blank"><i class="fa fa-twitter"></i> Twitter</a><br />
+<a href="https://www.youtube.com/c/marvel" target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a><br />
+<a href="mailto: mcuwiki@gmail.com" target="_blank"><i class="fa fa-envelope"></i> E-mail</a><br />
+</div>
+<!--contact ends-->
+</div>
+<!--card ends-->
+
+</div>
+<!--inner row ends-->
+</div>
+<!--rightt column ends-->
+</div>
+<!--row wrapper ends-->
+
+<!--footer starts-->
+<div class="footer center">
+<p>&copy Copyright JKM, Inc. 2022</p>
+</div>
+<!--footer ends-->
+</div>
+<!--body wrapper ends-->
+
+<!--back to top-->
+<div class="top">
+<a href="#">Top <i class="fa-solid fa-angle-up"></i></a>
+</div>
+
+<!--script starts-->
+<script>
+/* slideshow starts */
+var containers = document.getElementsByClassName('slideshow-container');
+for (let s = 0; s < containers.length; s++) {
+var cycle = containers[s].dataset.cycle;
+var slides = containers[s].querySelectorAll('.mySlides');
+var slideIndex = 0;
+showSlides(slides, slideIndex, cycle);
+}
+
+function showSlides(slides, slideIndex, cycle) {
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = 'none';
+}
+slideIndex++;
+if (slideIndex > slides.length) {
+slideIndex = 1;
+}
+slides[slideIndex - 1].style.display = 'block';
+setTimeout(function () {
+showSlides(slides, slideIndex, cycle);
+}, cycle);
+}
+/* slideshow ends */
+
+
+/* mob-nav starts */
+var btn = document.getElementById('menubtn');
+var menu = document.getElementById('menu');
+var c = 0;
+
+btn.onclick = function () {
+c++;
+if (c % 2 == 1) {
+menu.style.display = 'block';
+} else {
+menu.style.display = 'none';
+}
+};
+window.addEventListener('mouseup', function (event) {
+var menu = document.getElementById('menu');
+if (event.target != menu) {
+menu.style.display = 'none';
+}
+});
+window.onresize = function () {
+menu.style.display = 'none';
+};
+/* mob-nav ends */
+
+/* go back to top button starts */
+
+var topbutton = document.getElementsByClassName('top')[0];
+window.onscroll = function () {
+var y = window.scrollY;
+if (y >= 800) {
+topbutton.style.display = 'block';
+} else {
+topbutton.style.display = 'none';
+}
+};
+/* go back to top button ends */
+</script>
+<!-- script ends-->
+
+</body>
+<!--body ends-->
+</html>

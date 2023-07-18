@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<!--header start-->
+<head>
+<title>MCU wiki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/x-icon" href="favicon.png" />
+<link rel="stylesheet" type="text/css" href="style.css" id="stylesheet" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alata" />
+<script src="script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<!--header end-->
+
+<!--body start-->
+<body>
+<!--body wrapper start-->
+<div class="wrapper">
+<!--page header start-->
+<div class="header"></div>
+<!--page header end-->
+
+<!--menu container starts-->
+<div class="menu-container sticky">
+<!--top navigation start-->
+<div class="top-nav middle">
+<!--left starts-->
+<div class="left">
+<!--logo-->
+<div class="dropdown img middle no-hover">
+<a href="mcu-wiki.php"><img src="logo.png" alt="home-logo" height="35px"/></a>
+</div>
+
+<!--home-->
+<div class="dropdown middle">
+<a href="mcu-wiki.php">HOME</a>
+</div>
+
+<!--dropdown-->
+<div class="dropdown middle">
+<a href="javascript:void(0)">UNIVERSE <i class="fas fa-caret-down" style="font-size: 15px; color: white"></i></a>
+<div class="dropdown-content">
+<a href="organisations.html">Organisations</a>
+<a href="characters.html">Characters</a>
+<a href="timeline.html">Timeline</a>
+</div>
+</div>
+
+<!--dropdown-->
+<div class="dropdown middle">
+<a href="javascript:void(0)">MOVIES <i class="fas fa-caret-down" style="font-size: 15px; color: white"></i></a>
+<div class="dropdown-content">
+<a href="phase1.php">Phase 1</a>
+<a href="phase2.php">Phase 2</a>
+<a href="phase3.php">Phase 3</a>
+<a href="phase4.php">Phase 4</a>
+</div>
+</div>
+
+<!--dropdown-->
+<div class="dropdown middle">
+<a href="javascript:void(0)">TV SHOWS <i class="fas fa-caret-down" style="font-size: 15px; color: white" ></i></a>
+<div class="dropdown-content">
+<a href="marvelheroes.php">Marvel Heroes</a>
+<a href="disney.php">Disney+ series</a>
+</div>
+</div>
+
+<!--dropdown-->
+<div class="dropdown middle">
+<a href="review.php">REVIEWS</a>
+</div>
+</div>
+<!--left ends-->
+</div>
+<!--top navigation ends-->
+
+<!--right starts-->
+<div class="right" style="padding: 20px">
+<!--theme toggle button-->
+<div class="dropdown middle theme no-hover">
+<a onclick="change()"><i class="fas fa-adjust" id="themebtn" title="Lumos!"></i></a>
+</div>
+</div>
+<!--right ends-->
+
+<div>
+<!--menu button-->
+<div class="menu-icon middle no-hover left">
+<a class="icon" id="menubtn"><i class="fa fa-bars"></i></a>
+</div>
+
+<!--logo-->
+<div class="home-icon img middle no-hover center">
+<a href="mcu-wiki.php"><img src="logo.png" alt="home-logo" height="35px" /></a>
+</div>
+<br />
+</div>
+
+<!--mob nav starts-->
+<div class="mob-nav" id="menu">
+<!--home-->
+<div class="mob-dropdown middle">
+<a href="mcu-wiki.php">HOME</a>
+</div>
+<br />
+
+<!--dropdown-->
+<div class="mob-dropdown middle">
+<a href="javascript:void(0)">UNIVERSE<i class="fas fa-caret-down right" style="font-size: 15px; color: white"></i></a>
+<div class="mob-dropdown-content">
+<a href="organisations.html">Organisations</a>
+<a href="characters.html">Characters</a>
+<a href="timeline.html">Timeline</a>
+</div>
+</div>
+<br />
+
+<!--dropdown-->
+<div class="mob-dropdown middle">
+<a href="javascript:void(0)">MOVIES<i class="fas fa-caret-down right" style="font-size: 15px; color: white"></i></a>
+<div class="mob-dropdown-content">
+<a href="phase1.php">Phase 1</a>
+<a href="phase2.php">Phase 2</a>
+<a href="phase3.php">Phase 3</a>
+<a href="phase4.php">Phase 4</a>
+</div>
+</div>
+<br />
+
+<!--dropdown-->
+<div class="mob-dropdown middle">
+<a href="javascript:void(0)">TV SHOWS<i class="fas fa-caret-down right" style="font-size: 15px; color: white"></i></a>
+<div class="mob-dropdown-content">
+<a href="marvelheroes.php">Marvel Heroes</a>
+<a href="disney.php">Disney+ series</a>
+</div>
+</div>
+<br />
+
+<!--dropdown-->
+<div class="mob-dropdown middle">
+<a href="review.php">REVIEWS</a>
+</div>
+<br />
+</div>
+<!--mob nav ends-->
+</div>
+<!--menu container ends-->
+
+<!--row-wrapper starts-->
+<div class="row clear-float">
+<!--left column starts-->
+<div class="leftcolumn">
+<!--inner row starts-->
+<div class="inner-row">
+<!--card starts-->
+<div class="card clear-float">
+<h2>IRON MAN</h2>
+<!--col70 starts-->	
+<div class="col70">
+<blockquote>
+"My armor, it was never a distraction or a hobby, it was a cocoon. And now, I'm a changed man. 
+You can take away my house, all my tricks and 
+toys. But one thing you can't take away... I am Iron Man." <br><br>
+<i>―Tony Stark
+</i>
+</blockquote>
+<p>
+The <b class="blue">Anthony Edward "Tony" Stark </b>, was a billionaire industrialist, a founding member of the Avengers,
+ and the former CEO of Stark Industries. A brash but brilliant inventor, Stark was self-described as a genius, billionaire, playboy, and philanthropist. With his great wealth and exceptional technical knowledge, Stark was one of the world's most powerful men following the deaths of his parents and enjoyed the playboy lifestyle for many years until he was kidnapped by the Ten Rings in Afghanistan,
+ while demonstrating a fleet of Jericho missiles. With his life on the line, Stark created an armored suit which he used to 
+escape his captors. Upon returning home, he utilized several more armors to use against terrorists, as well as Obadiah Stane
+ who turned against Stark. Following his fight against Stane, Stark publicly revealed himself as Iron Man. Fresh off from 
+defeating enemies all over the world, Stark found himself dying due to his own Arc Reactor poisoning his body, all while
+ he was challenged by Ivan Vanko who attempted to destroy his legacy. After the Stark Expo incident, Stark reluctantly 
+agreed to serve as a consultant for S.H.I.E.L.D. where he used his position to upgrade their technology while he began a 
+relationship with Pepper Potts. With the world yet again being threatened, Stark joined the Avengers and helped defeat the 
+Chitauri and Loki. Due to the battle, he suffered from post-traumatic stress disorder, leading him to create the Iron Legion
+ to safeguard the world and help him retire.
+</p>
+<p>
+The 2012 "Mandarin" terrorist attacks forced Stark to come out of retirement to protect his country,
+ inadvertently putting his loved ones at risk and leaving him defenseless when his home was destroyed. Stark continued 
+his mission, finding Aldrich Killian as the mastermind of the attacks. Eventually, Stark defeated Killian, and was prompted 
+to destroy all of his armors with the Clean Slate Protocol after almost losing Potts. However, when the Avengers were 
+officially demobilized due to the War on HYDRA, Stark built more armors and resumed his role as Iron Man, aiding them 
+in the capture of Baron Strucker and acquiring Loki's Scepter.
+</p>
+<p>
+Once the threat of HYDRA had been ended, at last, Stark, influenced by Scarlet Witch's visions, built Ultron with
+ the help of Bruce Banner as a new peacekeeping A.I. to protect the world and allow the Avengers to retire. However,
+ Ultron believed that humanity threatened the world and thus, according to his program, decided to extinguish humanity.
+ Through the work of the Avengers, Ultron was defeated, however, not without massive civilian cost and many lives being 
+lost during which Sokovia was elevated into the sky.
+</p>
+</div>
+<!--col70 ends-->
+<!--col30 starts-->
+<div class="col30" style="padding-left: 20px;">
+<!--info-card starts-->
+<div class="info-card">
+
+<!--info-title starts-->
+<div class="info-title">
+<h3 class="center">IRON MAN</h3>
+</div>
+<!--info-title ends-->
+<img class="image" src="characters/iron-man.webp" alt="shield" />
+<!--info-content starts-->
+<div class="info-content">
+
+<!--row1 starts-->
+<div class="row1 clear-float">
+
+<div class="col30"><b>Real Name
+</b></div>
+<div class="col70">
+Anthony Edward Stark
+</div>
+	
+<div class="col30"><b>Alias(es)</b></div>
+<div class="col70">
+
+Tony Stark<br>
+Iron Man<br>
+</div>
+	
+<div class="col30"><b>Species</b></div>
+<div class="col70">
+Human
+</div>
+
+<div class="col30"><b>Citizenship</b></div>
+<div class="col70">
+American<br>
+</div>
+	
+<div class="col30"><b>Gender</b></div>
+<div class="col70">
+Male
+</div>
+
+<div class="col30"><b>Date of Birth</b></div>
+<div class="col70">
+May 29, 1970
+</div>
+
+</div>
+<!-- row1 ends-->
+
+<div class="center" style="padding: 20px;"><b>Appearances</b></div>
+
+<div class="col30"><b>Movies</b></div>
+<div class="col70">
+Iron Man<br>
+Iron Man 2<br>
+Thor<br>
+Captain America: The First Avenger<br>
+The Avengers<br>
+Iron Man 3 <span class="braces">(mentioned)</span><br>
+Thor: The Dark World <span class="braces">(mentioned)</span><br>
+Avengers: Age of Ultron<br>
+Captain America: Civil War <span class="braces">(mentioned)</span><br>
+Spider-Man: Far From Home<br>
+Black Widow <span class="braces">(flashback)</span><br><br>
+</div>
+	
+<div class="col30"><b>TV Shows</b></div>
+<div class="col70">
+Agents of S.H.I.E.L.D.<br>
+The Falcon and The Winter Soldier <span class="braces">(mentioned)</span><br>
+Loki<br>
+What If...? <span class="braces">(recap)</span><br>
+Hawkeye <span class="braces">(mentioned)</span><br>
+Ms. Marvel <span class="braces">(mentioned)</span><br>	
+</div>
+<br />
+</div>
+<!--info-content ends-->
+</div>
+<!--info-card ends-->
+</div>
+<!--col30 ends-->
+</div>
+<!--card ends-->
+	
+</div>
+<!--inner row ends-->
+</div>
+<!--left column ends-->
+
+<!--rightt column starts-->
+<div class="rightcolumn">
+<!--inner row starts-->
+<div class="inner-row">
+<!--card starts-->
+<div class="card upcoming">
+<h2>Upcoming</h2>
+
+<!--slideshow container starts-->
+<div class="slideshow-container" data-cycle="3000">
+<!--slide-->
+<div class="mySlides fade">
+<img src="upcoming/thorlat.jpg" alt="thor: love and thunder"/>
+</div>
+
+<!--slide-->
+<div class="mySlides fade">
+<img src="upcoming/wakanda4ever.jpg" alt="wakanda forever" />
+</div>
+
+<!--slide-->
+<div class="mySlides fade">
+<img src="upcoming/gog3.webp" alt="guardians of the galaxy vol.3"/>
+</div>
+
+<!--slide-->
+<div class="mySlides fade">
+<img src="upcoming/shehulk.jpg" alt="she hulk" />
+</div>
+
+<!--slide-->
+<div class="mySlides fade">
+<img src="upcoming/iamgroot.jpg" alt="i am groot" />
+</div>
+</div>
+<!--slideshow container ends-->
+</div>
+<!--card ends-->
+
+<!--card starts-->
+<div class="card">
+<h2>Countdown</h2>
+<p id="count" class="center"></p>
+<img src="thorlat.png" alt="thorlat" class="image" />
+</div>
+<!--card ends-->
+
+<!--card starts-->
+<div class="card char clear-float">
+<h2>Featured Characters</h2>
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="loki.html">
+<img src="characters/loki.webp" alt="loki" class="char-img" />
+<div class="overlay">Loki</div>
+</a>
+</div>
+<!--character container ends-->
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="ironman.html">
+<img src="characters/iron-man.webp" alt="iron-man" class="char-img" />
+<div class="overlay">Iron Man</div>
+</a>
+</div>
+<!--character container ends-->
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="thanos.html">
+<img src="characters/thanos.webp" alt="thanos" class="char-img" />
+<div class="overlay">Thanos</div>
+</a>
+</div>
+<!--character container ends-->
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="moonknight.html">
+<img src="characters/moon-knight.webp" alt="moon-knight" class="char-img"/>
+<div class="overlay">Moon Knight</div>
+</a>
+</div>
+<!--character container ends-->
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="scarletwitch.html">
+<img src="characters/scarlet-witch.webp" alt="scarlet-witch" class="char-img" />
+<div class="overlay">Scarlet Witch</div>
+</a>
+</div>
+<!--character container ends-->
+
+<!--character container starts-->
+<div class="char-container left">
+<a href="msmarvel.html">
+<img src="characters/ms-marvel.webp" alt="ms-marvel" class="char-img" />
+<div class="overlay">Ms Marvel</div>
+</a>
+</div>
+<!--character container ends-->
+
+<div class="more left"><button id="morebtn"><a href="characters.html">More...</a></button></div>
+</div>
+<!--card ends-->
+
+<!--card starts-->
+<div class="card">
+<h2>Contact Us</h2>
+
+<!--contact starts-->
+<div class="contact">
+<a href="https://www.instagram.com/marvel/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a><br />
+<a href="https://www.facebook.com/groups/MCU.Official" target="_blank"><i class="fa fa-facebook"></i> Facebook</a><br />
+<a href="https://twitter.com/MarvelStudios" target="_blank"><i class="fa fa-twitter"></i> Twitter</a><br />
+<a href="https://www.youtube.com/c/marvel" target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a><br />
+<a href="mailto: mcuwiki@gmail.com" target="_blank"><i class="fa fa-envelope"></i> E-mail</a><br />
+</div>
+<!--contact ends-->
+</div>
+<!--card ends-->
+
+</div>
+<!--inner row ends-->
+</div>
+<!--rightt column ends-->
+</div>
+<!--row wrapper ends-->
+
+<!--footer starts-->
+<div class="footer center">
+<p>&copy Copyright JKM, Inc. 2022</p>
+</div>
+<!--footer ends-->
+</div>
+<!--body wrapper ends-->
+
+<!--back to top-->
+<div class="top">
+<a href="#">Top <i class="fa-solid fa-angle-up"></i></a>
+</div>
+
+<!--script starts-->
+<script>
+/* slideshow starts */
+var containers = document.getElementsByClassName('slideshow-container');
+for (let s = 0; s < containers.length; s++) {
+var cycle = containers[s].dataset.cycle;
+var slides = containers[s].querySelectorAll('.mySlides');
+var slideIndex = 0;
+showSlides(slides, slideIndex, cycle);
+}
+
+function showSlides(slides, slideIndex, cycle) {
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = 'none';
+}
+slideIndex++;
+if (slideIndex > slides.length) {
+slideIndex = 1;
+}
+slides[slideIndex - 1].style.display = 'block';
+setTimeout(function () {
+showSlides(slides, slideIndex, cycle);
+}, cycle);
+}
+/* slideshow ends */
+
+/* mob-nav starts */
+var btn = document.getElementById('menubtn');
+var menu = document.getElementById('menu');
+var c = 0;
+
+btn.onclick = function () {
+c++;
+if (c % 2 == 1) {
+menu.style.display = 'block';
+} else {
+menu.style.display = 'none';
+}
+};
+window.addEventListener('mouseup', function (event) {
+var menu = document.getElementById('menu');
+if (event.target != menu) {
+menu.style.display = 'none';
+}
+});
+window.onresize = function () {
+menu.style.display = 'none';
+};
+/* mob-nav ends */
+
+/* go back to top button starts */
+
+var topbutton = document.getElementsByClassName('top')[0];
+window.onscroll = function () {
+var y = window.scrollY;
+if (y >= 800) {
+topbutton.style.display = 'block';
+} else {
+topbutton.style.display = 'none';
+}
+};
+/* go back to top button ends */
+</script>
+<!-- script ends-->
+
+</body>
+<!--body ends-->
+</html>
